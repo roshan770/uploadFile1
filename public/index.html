@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Client Data</title>
+  </head>
+  <body>
+    <h1>Please fill data in the form below:</h1>
+    <form method="POST" action="/post-feedback">
+      <label>Name:<input type="text" name="client-name" required/></label>
+      <br />
+      <label>Email:<input type="text" name="client-email" required/></label>
+      <br />
+      <label>Comment:<br /><textarea name="comment" required></textarea></label>
+      <br />
+      <label>Upload Photo : <input type="file" name="file" required /> </label>
+      <br />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+    <a href="/view-feedbacks">View feedbacks</a>
+  </body>
+</html>
